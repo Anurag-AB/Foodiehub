@@ -27,7 +27,7 @@ const ItemList = ({ items = [] }) => {
           >
             {/* LEFT SIDE */}
             <div className="w-2/3 text-left">
-              <h4 className="font-bold">{info.name}</h4>
+              <h4 className="text-sm md:text-base font-bold">{info.name}</h4>
 
               <p className="text-sm font-semibold">
                 ₹{price}
@@ -45,12 +45,12 @@ const ItemList = ({ items = [] }) => {
                   <img
                     src={CDN_URL + info.imageId}
                     alt={info.name}
-                    className="w-32 h-32 object-cover rounded-lg"
+                    className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-lg "
                   />
                 )}
 
                 <button
-                  className="absolute left-1/2 -translate-x-1/2 bottom-2 px-4 py-1 bg-white border border-gray-300 shadow-md rounded text-green-600 text-sm font-bold whitespace-nowrap"
+                  className="absolute left-1/2 -translate-x-1/2 bottom-2 px-2 md:px-4  py-1 bg-white border border-gray-300 shadow-md rounded text-green-600 text-sm font-bold whitespace-nowrap"
                   onClick={() => handleAddItem(item)}
                 >
                   ADD +

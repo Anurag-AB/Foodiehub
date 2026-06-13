@@ -327,12 +327,15 @@ const Body = () => {
 
       <div
         className="
-          flex
-          flex-wrap
-          justify-center
-          gap-8
-          px-6
-          py-8
+         grid
+    grid-cols-2
+    sm:grid-cols-2
+    md:grid-cols-3
+    lg:grid-cols-5
+    gap-4
+    px-4
+    py-8
+    justify-items-center
         "
       >
 
@@ -347,12 +350,12 @@ const Body = () => {
                 "/restaurants/" +
                 restaurant.info.id
               }
-              className="w-[260px]"
+              className="w-full"
             >
 
               <div
                 className="
-                  h-[420px]
+                  h-full
                   transition-all
                   duration-300
                 "

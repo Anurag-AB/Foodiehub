@@ -62,9 +62,9 @@ const RestaurantMenu = () => {
   //     ?.flatMap((c) => c?.card?.card?.itemCards || []) || [];
 
   return (
-    <div className="text-center">
-      <h1 className="font-bold my-6 text-2xl">{restaurant?.name}</h1>
-      <h2 className="font-bold text-lg">{restaurant?.cuisines?.join(", ")}</h2>
+    <div className="max-w-3xl mx-auto px-4 py-6 text-center">
+      <h1 className="font-bold my-6 text-xl md:text-2xl">{restaurant?.name}</h1>
+      <h2 className="font-bold text-sm md:text-lg">{restaurant?.cuisines?.join(", ")}</h2>
 
       {categories.map((category,index) => (
   <RestaurantCategory

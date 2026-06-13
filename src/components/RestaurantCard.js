@@ -15,19 +15,18 @@ const RestaurantCard = ({ resData }) => {
 
     <div
       className="
-        m-4
-        p-4
-        w-[250px]
-        h-[420px]
-        rounded-2xl
-        bg-white
-        shadow-md
-        hover:shadow-2xl
-        hover:scale-105
-        transition-all
-        duration-300
-        flex
-        flex-col
+        p-3
+    w-full
+    h-[380px]
+    rounded-2xl
+    bg-white
+    shadow-md
+    hover:shadow-2xl
+    hover:scale-105
+    transition-all
+    duration-300
+    flex
+    flex-col
       "
     >
 
